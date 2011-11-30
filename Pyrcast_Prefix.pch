@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Pyrcast' target in the 'Pyrcast' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

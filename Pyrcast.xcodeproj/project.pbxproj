@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* PyrcastAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PyrcastAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BE01BA7813142A6400EC45CD /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01BA7713142A6400EC45CD /* Station.m */; };
+		BE01BAA613142EA200EC45CD /* PyrcastStationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE01BAA513142EA200EC45CD /* PyrcastStationsController.m */; };
+		BE1BC3CB13184C8400C9EF33 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BC3C513184C8400C9EF33 /* CJSONDeserializer.m */; };
+		BE1BC3CC13184C8400C9EF33 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BC3C713184C8400C9EF33 /* CJSONScanner.m */; };
+		BE1BC3CD13184C8400C9EF33 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BC3C913184C8400C9EF33 /* CJSONSerializer.m */; };
+		BE1BC3E413184CC700C9EF33 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BC3E313184CC700C9EF33 /* CDataScanner.m */; };
+		BE1BC3EB13184CF700C9EF33 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BC3E813184CF700C9EF33 /* CDataScanner_Extensions.m */; };
+		BE1BC3EC13184CF700C9EF33 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BC3EA13184CF700C9EF33 /* NSDictionary_JSONExtensions.m */; };
+		BE2D1DFB130E252D00513CD0 /* AWSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2D1DF8130E252D00513CD0 /* AWSlider.m */; };
+		BE2D1DFC130E252D00513CD0 /* AWImageSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2D1DFA130E252D00513CD0 /* AWImageSlider.m */; };
+		BE2D2047130E5F5100513CD0 /* PyrcastView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2D2046130E5F5100513CD0 /* PyrcastView.m */; };
+		BE2DA193130DE61900239D5B /* PCHeaderBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA179130DE61900239D5B /* PCHeaderBackground.png */; };
+		BE2DA194130DE61900239D5B /* PCHeaderSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA17A130DE61900239D5B /* PCHeaderSettings.png */; };
+		BE2DA195130DE61900239D5B /* PCHeaderSettingsAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA17B130DE61900239D5B /* PCHeaderSettingsAlt.png */; };
+		BE2DA196130DE61900239D5B /* PCHeaderStations.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA17C130DE61900239D5B /* PCHeaderStations.png */; };
+		BE2DA197130DE61900239D5B /* PCHeaderStationsAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA17D130DE61900239D5B /* PCHeaderStationsAdd.png */; };
+		BE2DA198130DE61900239D5B /* PCHeaderStationsAddAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA17E130DE61900239D5B /* PCHeaderStationsAddAlt.png */; };
+		BE2DA199130DE61900239D5B /* PCHeaderStationsAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA17F130DE61900239D5B /* PCHeaderStationsAlt.png */; };
+		BE2DA19A130DE61900239D5B /* PCHistoryDislike.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA180130DE61900239D5B /* PCHistoryDislike.png */; };
+		BE2DA19B130DE61900239D5B /* PCHistoryLike.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA181130DE61900239D5B /* PCHistoryLike.png */; };
+		BE2DA19C130DE61900239D5B /* PCPlayerBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA182130DE61900239D5B /* PCPlayerBackground.png */; };
+		BE2DA19D130DE61900239D5B /* PCPlayerDislike.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA183130DE61900239D5B /* PCPlayerDislike.png */; };
+		BE2DA19E130DE61900239D5B /* PCPlayerDislikeAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA184130DE61900239D5B /* PCPlayerDislikeAlt.png */; };
+		BE2DA19F130DE61900239D5B /* PCPlayerInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA185130DE61900239D5B /* PCPlayerInfo.png */; };
+		BE2DA1A0130DE61900239D5B /* PCPlayerInfoAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA186130DE61900239D5B /* PCPlayerInfoAlt.png */; };
+		BE2DA1A1130DE61900239D5B /* PCPlayerLike.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA187130DE61900239D5B /* PCPlayerLike.png */; };
+		BE2DA1A2130DE61900239D5B /* PCPlayerLikeAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA188130DE61900239D5B /* PCPlayerLikeAlt.png */; };
+		BE2DA1A3130DE61900239D5B /* PCPlayerPause.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA189130DE61900239D5B /* PCPlayerPause.png */; };
+		BE2DA1A4130DE61900239D5B /* PCPlayerPauseAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA18A130DE61900239D5B /* PCPlayerPauseAlt.png */; };
+		BE2DA1A5130DE61900239D5B /* PCPlayerPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA18B130DE61900239D5B /* PCPlayerPlay.png */; };
+		BE2DA1A6130DE61900239D5B /* PCPlayerPlayAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA18C130DE61900239D5B /* PCPlayerPlayAlt.png */; };
+		BE2DA1A7130DE61900239D5B /* PCPlayerRestart.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA18D130DE61900239D5B /* PCPlayerRestart.png */; };
+		BE2DA1A8130DE61900239D5B /* PCPlayerRestartAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA18E130DE61900239D5B /* PCPlayerRestartAlt.png */; };
+		BE2DA1A9130DE61900239D5B /* PCPlayerSkip.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA18F130DE61900239D5B /* PCPlayerSkip.png */; };
+		BE2DA1AA130DE61900239D5B /* PCPlayerSkipAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA190130DE61900239D5B /* PCPlayerSkipAlt.png */; };
+		BE2DA1AB130DE61900239D5B /* PCPlayerSliderKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA191130DE61900239D5B /* PCPlayerSliderKnob.png */; };
+		BE2DA1AC130DE61900239D5B /* PCPlayerSliderKnobAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA192130DE61900239D5B /* PCPlayerSliderKnobAlt.png */; };
+		BE3523BA11D40B9B0000874F /* PyrcastStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3523B911D40B9B0000874F /* PyrcastStatusBarController.m */; };
+		BE42D7551302E8A200CED80E /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D7471302E8A200CED80E /* ASIInputStream.m */; };
+		BE42D7561302E8A200CED80E /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D7491302E8A200CED80E /* ASIFormDataRequest.m */; };
+		BE42D7571302E8A200CED80E /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D74B1302E8A200CED80E /* ASIHTTPRequest.m */; };
+		BE42D7581302E8A200CED80E /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D74D1302E8A200CED80E /* ASINetworkQueue.m */; };
+		BE42D7591302E8A200CED80E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D7501302E8A200CED80E /* ASIDownloadCache.m */; };
+		BE42D75A1302E8A200CED80E /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D7521302E8A200CED80E /* ASIDataCompressor.m */; };
+		BE42D75B1302E8A200CED80E /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42D7541302E8A200CED80E /* ASIDataDecompressor.m */; };
+		BE42D7611302E8D600CED80E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE42D7601302E8D600CED80E /* libz.dylib */; };
+		BE42D8281302E95700CED80E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE42D8271302E95700CED80E /* SystemConfiguration.framework */; };
+		BE4491DA1315559000365AC4 /* PCHeaderStationDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4491D81315559000365AC4 /* PCHeaderStationDelete.png */; };
+		BE4491DB1315559000365AC4 /* PCHeaderStationDeleteAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4491D91315559000365AC4 /* PCHeaderStationDeleteAlt.png */; };
+		BE62384313044C430074ADC5 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62384213044C430074ADC5 /* BWToolkitFramework.framework */; };
+		BE62388B13044ED50074ADC5 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE62384213044C430074ADC5 /* BWToolkitFramework.framework */; };
+		BE6D9629132732A40083A964 /* PCMenuBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6D9627132732A40083A964 /* PCMenuBar.png */; };
+		BE6D962A132732A40083A964 /* PCMenuBarAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6D9628132732A40083A964 /* PCMenuBarAlt.png */; };
+		BE6FB9F61304FFC4001CCEC1 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6FB9F51304FFC4001CCEC1 /* QTKit.framework */; };
+		BE8FB6881312190F0058A368 /* PyrcastHistoryTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB6871312190F0058A368 /* PyrcastHistoryTableController.m */; };
+		BEA9B7781315950400FFC29B /* SR_LeopardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B76D1315950400FFC29B /* SR_LeopardView.m */; };
+		BEA9B7791315950400FFC29B /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B76F1315950400FFC29B /* SRRecorderControl.m */; };
+		BEA9B77A1315950400FFC29B /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7711315950400FFC29B /* SRRecorderCell.m */; };
+		BEA9B77B1315950400FFC29B /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7731315950400FFC29B /* SRKeyCodeTransformer.m */; };
+		BEA9B77C1315950400FFC29B /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7751315950400FFC29B /* SRValidator.m */; };
+		BEA9B77D1315950400FFC29B /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7771315950400FFC29B /* SRCommon.m */; };
+		BEA9B7881315959900FFC29B /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7811315959900FFC29B /* PTHotKey.m */; };
+		BEA9B7891315959900FFC29B /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7831315959900FFC29B /* PTHotKeyCenter.m */; };
+		BEA9B78A1315959900FFC29B /* PTKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7851315959900FFC29B /* PTKeyCodeTranslator.m */; };
+		BEA9B78B1315959900FFC29B /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7871315959900FFC29B /* PTKeyCombo.m */; };
+		BEA9B7A41315978F00FFC29B /* SRRemoveShortcut.tif in Resources */ = {isa = PBXBuildFile; fileRef = BEA9B7A01315978F00FFC29B /* SRRemoveShortcut.tif */; };
+		BEA9B7A51315978F00FFC29B /* SRRemoveShortcutPressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = BEA9B7A11315978F00FFC29B /* SRRemoveShortcutPressed.tif */; };
+		BEA9B7A61315978F00FFC29B /* SRRemoveShortcutRollover.tif in Resources */ = {isa = PBXBuildFile; fileRef = BEA9B7A21315978F00FFC29B /* SRRemoveShortcutRollover.tif */; };
+		BEA9B7A71315978F00FFC29B /* SRSnapback.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BEA9B7A31315978F00FFC29B /* SRSnapback.tiff */; };
+		BEA9B7F31315A53200FFC29B /* PyrcastPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA9B7F21315A53200FFC29B /* PyrcastPreferencesController.m */; };
+		BEA9B8671315BA2300FFC29B /* PCPreferencesShortcuts.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA9B8661315BA2300FFC29B /* PCPreferencesShortcuts.png */; };
+		BEA9B8D31315D22000FFC29B /* PCAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA9B8D21315D22000FFC29B /* PCAlert.png */; };
+		BEAA6E8D131B38EF00D6F2D2 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAA6E8C131B38EF00D6F2D2 /* Growl.framework */; };
+		BEAA6E9E131B38FF00D6F2D2 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEAA6E8C131B38EF00D6F2D2 /* Growl.framework */; };
+		BEAA6EF3131B3EC000D6F2D2 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = BEAA6ED2131B39BD00D6F2D2 /* Growl Registration Ticket.growlRegDict */; };
+		BEBBC23112E9D9EF007EB476 /* Blowfish.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBC22A12E9D9EF007EB476 /* Blowfish.m */; };
+		BEBBC23212E9D9EF007EB476 /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBC22C12E9D9EF007EB476 /* NSData+Hex.m */; };
+		BEBBC23312E9D9EF007EB476 /* Pandora.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBC22E12E9D9EF007EB476 /* Pandora.m */; };
+		BEBBC23412E9D9EF007EB476 /* NSString+URLDencoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBC23012E9D9EF007EB476 /* NSString+URLDencoding.m */; };
+		BEBBC2BD12E9E2C9007EB476 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBBC2BC12E9E2C9007EB476 /* QuartzCore.framework */; };
+		BEBBC32B12E9EDCE007EB476 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBC32A12E9EDCE007EB476 /* Song.m */; };
+		BEBBC3EF12EA02FC007EB476 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBBC3EE12EA02FC007EB476 /* AudioToolbox.framework */; };
+		BEBBC57812EA92C7007EB476 /* Pyrcast.icns in Resources */ = {isa = PBXBuildFile; fileRef = BEBBC57712EA92C7007EB476 /* Pyrcast.icns */; };
+		BED04E18132866900062DE7B /* PCHistoryAlbumGlare.png in Resources */ = {isa = PBXBuildFile; fileRef = BED04E17132866900062DE7B /* PCHistoryAlbumGlare.png */; };
+		BED286BA12E8A47A00A0863D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED286B912E8A47A00A0863D /* Carbon.framework */; };
+		BED295FD1312FADC001ED74A /* HistoryTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED295FC1312FADC001ED74A /* HistoryTextFieldCell.m */; };
+		BEEC8983132F1201005403A1 /* PCPreferencesLastFM.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEC8982132F1201005403A1 /* PCPreferencesLastFM.png */; };
+		BEFAA970132819170031F1C1 /* HMediaKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFAA96F132819170031F1C1 /* HMediaKeys.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE62388A13044EC50074ADC5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE62388B13044ED50074ADC5 /* BWToolkitFramework.framework in CopyFiles */,
+				BEAA6E9E131B38FF00D6F2D2 /* Growl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* PyrcastAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyrcastAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* PyrcastAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyrcastAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Pyrcast_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pyrcast_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Pyrcast-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pyrcast-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Pyrcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyrcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE01BA7613142A6400EC45CD /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		BE01BA7713142A6400EC45CD /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		BE01BAA413142EA200EC45CD /* PyrcastStationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyrcastStationsController.h; sourceTree = "<group>"; };
+		BE01BAA513142EA200EC45CD /* PyrcastStationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyrcastStationsController.m; sourceTree = "<group>"; };
+		BE1BC3C413184C8400C9EF33 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = TouchJSON/CJSONDeserializer.h; sourceTree = "<group>"; };
+		BE1BC3C513184C8400C9EF33 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = TouchJSON/CJSONDeserializer.m; sourceTree = "<group>"; };
+		BE1BC3C613184C8400C9EF33 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONScanner.h; path = TouchJSON/CJSONScanner.h; sourceTree = "<group>"; };
+		BE1BC3C713184C8400C9EF33 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONScanner.m; path = TouchJSON/CJSONScanner.m; sourceTree = "<group>"; };
+		BE1BC3C813184C8400C9EF33 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = TouchJSON/CJSONSerializer.h; sourceTree = "<group>"; };
+		BE1BC3C913184C8400C9EF33 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializer.m; path = TouchJSON/CJSONSerializer.m; sourceTree = "<group>"; };
+		BE1BC3CA13184C8400C9EF33 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = TouchJSON/JSONRepresentation.h; sourceTree = "<group>"; };
+		BE1BC3E213184CC700C9EF33 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = TouchJSON/CDataScanner.h; sourceTree = "<group>"; };
+		BE1BC3E313184CC700C9EF33 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = TouchJSON/CDataScanner.m; sourceTree = "<group>"; };
+		BE1BC3E713184CF700C9EF33 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner_Extensions.h; path = TouchJSON/CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		BE1BC3E813184CF700C9EF33 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = TouchJSON/CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		BE1BC3E913184CF700C9EF33 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = TouchJSON/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		BE1BC3EA13184CF700C9EF33 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = TouchJSON/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		BE2D1DF7130E252D00513CD0 /* AWSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSlider.h; sourceTree = "<group>"; };
+		BE2D1DF8130E252D00513CD0 /* AWSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSlider.m; sourceTree = "<group>"; };
+		BE2D1DF9130E252D00513CD0 /* AWImageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWImageSlider.h; sourceTree = "<group>"; };
+		BE2D1DFA130E252D00513CD0 /* AWImageSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWImageSlider.m; sourceTree = "<group>"; };
+		BE2D2045130E5F5100513CD0 /* PyrcastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyrcastView.h; sourceTree = "<group>"; };
+		BE2D2046130E5F5100513CD0 /* PyrcastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyrcastView.m; sourceTree = "<group>"; };
+		BE2DA179130DE61900239D5B /* PCHeaderBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderBackground.png; path = Images/PCHeaderBackground.png; sourceTree = "<group>"; };
+		BE2DA17A130DE61900239D5B /* PCHeaderSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderSettings.png; path = Images/PCHeaderSettings.png; sourceTree = "<group>"; };
+		BE2DA17B130DE61900239D5B /* PCHeaderSettingsAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderSettingsAlt.png; path = Images/PCHeaderSettingsAlt.png; sourceTree = "<group>"; };
+		BE2DA17C130DE61900239D5B /* PCHeaderStations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderStations.png; path = Images/PCHeaderStations.png; sourceTree = "<group>"; };
+		BE2DA17D130DE61900239D5B /* PCHeaderStationsAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderStationsAdd.png; path = Images/PCHeaderStationsAdd.png; sourceTree = "<group>"; };
+		BE2DA17E130DE61900239D5B /* PCHeaderStationsAddAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderStationsAddAlt.png; path = Images/PCHeaderStationsAddAlt.png; sourceTree = "<group>"; };
+		BE2DA17F130DE61900239D5B /* PCHeaderStationsAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderStationsAlt.png; path = Images/PCHeaderStationsAlt.png; sourceTree = "<group>"; };
+		BE2DA180130DE61900239D5B /* PCHistoryDislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHistoryDislike.png; path = Images/PCHistoryDislike.png; sourceTree = "<group>"; };
+		BE2DA181130DE61900239D5B /* PCHistoryLike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHistoryLike.png; path = Images/PCHistoryLike.png; sourceTree = "<group>"; };
+		BE2DA182130DE61900239D5B /* PCPlayerBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerBackground.png; path = Images/PCPlayerBackground.png; sourceTree = "<group>"; };
+		BE2DA183130DE61900239D5B /* PCPlayerDislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerDislike.png; path = Images/PCPlayerDislike.png; sourceTree = "<group>"; };
+		BE2DA184130DE61900239D5B /* PCPlayerDislikeAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerDislikeAlt.png; path = Images/PCPlayerDislikeAlt.png; sourceTree = "<group>"; };
+		BE2DA185130DE61900239D5B /* PCPlayerInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerInfo.png; path = Images/PCPlayerInfo.png; sourceTree = "<group>"; };
+		BE2DA186130DE61900239D5B /* PCPlayerInfoAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerInfoAlt.png; path = Images/PCPlayerInfoAlt.png; sourceTree = "<group>"; };
+		BE2DA187130DE61900239D5B /* PCPlayerLike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerLike.png; path = Images/PCPlayerLike.png; sourceTree = "<group>"; };
+		BE2DA188130DE61900239D5B /* PCPlayerLikeAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerLikeAlt.png; path = Images/PCPlayerLikeAlt.png; sourceTree = "<group>"; };
+		BE2DA189130DE61900239D5B /* PCPlayerPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerPause.png; path = Images/PCPlayerPause.png; sourceTree = "<group>"; };
+		BE2DA18A130DE61900239D5B /* PCPlayerPauseAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerPauseAlt.png; path = Images/PCPlayerPauseAlt.png; sourceTree = "<group>"; };
+		BE2DA18B130DE61900239D5B /* PCPlayerPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerPlay.png; path = Images/PCPlayerPlay.png; sourceTree = "<group>"; };
+		BE2DA18C130DE61900239D5B /* PCPlayerPlayAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerPlayAlt.png; path = Images/PCPlayerPlayAlt.png; sourceTree = "<group>"; };
+		BE2DA18D130DE61900239D5B /* PCPlayerRestart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerRestart.png; path = Images/PCPlayerRestart.png; sourceTree = "<group>"; };
+		BE2DA18E130DE61900239D5B /* PCPlayerRestartAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerRestartAlt.png; path = Images/PCPlayerRestartAlt.png; sourceTree = "<group>"; };
+		BE2DA18F130DE61900239D5B /* PCPlayerSkip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerSkip.png; path = Images/PCPlayerSkip.png; sourceTree = "<group>"; };
+		BE2DA190130DE61900239D5B /* PCPlayerSkipAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerSkipAlt.png; path = Images/PCPlayerSkipAlt.png; sourceTree = "<group>"; };
+		BE2DA191130DE61900239D5B /* PCPlayerSliderKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerSliderKnob.png; path = Images/PCPlayerSliderKnob.png; sourceTree = "<group>"; };
+		BE2DA192130DE61900239D5B /* PCPlayerSliderKnobAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPlayerSliderKnobAlt.png; path = Images/PCPlayerSliderKnobAlt.png; sourceTree = "<group>"; };
+		BE3523B811D40B9B0000874F /* PyrcastStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyrcastStatusBarController.h; sourceTree = "<group>"; };
+		BE3523B911D40B9B0000874F /* PyrcastStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyrcastStatusBarController.m; sourceTree = "<group>"; };
+		BE42D7431302E8A200CED80E /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		BE42D7441302E8A200CED80E /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		BE42D7451302E8A200CED80E /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		BE42D7461302E8A200CED80E /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		BE42D7471302E8A200CED80E /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		BE42D7481302E8A200CED80E /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		BE42D7491302E8A200CED80E /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		BE42D74A1302E8A200CED80E /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		BE42D74B1302E8A200CED80E /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		BE42D74C1302E8A200CED80E /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		BE42D74D1302E8A200CED80E /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		BE42D74E1302E8A200CED80E /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		BE42D74F1302E8A200CED80E /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		BE42D7501302E8A200CED80E /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		BE42D7511302E8A200CED80E /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		BE42D7521302E8A200CED80E /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		BE42D7531302E8A200CED80E /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		BE42D7541302E8A200CED80E /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		BE42D7601302E8D600CED80E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BE42D8271302E95700CED80E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE4491D81315559000365AC4 /* PCHeaderStationDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderStationDelete.png; path = Images/PCHeaderStationDelete.png; sourceTree = "<group>"; };
+		BE4491D91315559000365AC4 /* PCHeaderStationDeleteAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHeaderStationDeleteAlt.png; path = Images/PCHeaderStationDeleteAlt.png; sourceTree = "<group>"; };
+		BE62384213044C430074ADC5 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/alexwinston/Downloads/BWToolKit_125_without_pAPI/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
+		BE6D9627132732A40083A964 /* PCMenuBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCMenuBar.png; path = Images/PCMenuBar.png; sourceTree = "<group>"; };
+		BE6D9628132732A40083A964 /* PCMenuBarAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCMenuBarAlt.png; path = Images/PCMenuBarAlt.png; sourceTree = "<group>"; };
+		BE6FB9F51304FFC4001CCEC1 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		BE8FB6861312190F0058A368 /* PyrcastHistoryTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyrcastHistoryTableController.h; sourceTree = "<group>"; };
+		BE8FB6871312190F0058A368 /* PyrcastHistoryTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyrcastHistoryTableController.m; sourceTree = "<group>"; };
+		BEA9B76B1315950400FFC29B /* ShortcutRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutRecorder.h; sourceTree = "<group>"; };
+		BEA9B76C1315950400FFC29B /* SR_LeopardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SR_LeopardView.h; sourceTree = "<group>"; };
+		BEA9B76D1315950400FFC29B /* SR_LeopardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SR_LeopardView.m; sourceTree = "<group>"; };
+		BEA9B76E1315950400FFC29B /* SRRecorderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderControl.h; sourceTree = "<group>"; };
+		BEA9B76F1315950400FFC29B /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
+		BEA9B7701315950400FFC29B /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
+		BEA9B7711315950400FFC29B /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
+		BEA9B7721315950400FFC29B /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
+		BEA9B7731315950400FFC29B /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
+		BEA9B7741315950400FFC29B /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
+		BEA9B7751315950400FFC29B /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
+		BEA9B7761315950400FFC29B /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
+		BEA9B7771315950400FFC29B /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
+		BEA9B7801315959900FFC29B /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		BEA9B7811315959900FFC29B /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
+		BEA9B7821315959900FFC29B /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		BEA9B7831315959900FFC29B /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKeyCenter.m; sourceTree = "<group>"; };
+		BEA9B7841315959900FFC29B /* PTKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCodeTranslator.h; sourceTree = "<group>"; };
+		BEA9B7851315959900FFC29B /* PTKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCodeTranslator.m; sourceTree = "<group>"; };
+		BEA9B7861315959900FFC29B /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		BEA9B7871315959900FFC29B /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
+		BEA9B7A01315978F00FFC29B /* SRRemoveShortcut.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SRRemoveShortcut.tif; path = Images/SRRemoveShortcut.tif; sourceTree = "<group>"; };
+		BEA9B7A11315978F00FFC29B /* SRRemoveShortcutPressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SRRemoveShortcutPressed.tif; path = Images/SRRemoveShortcutPressed.tif; sourceTree = "<group>"; };
+		BEA9B7A21315978F00FFC29B /* SRRemoveShortcutRollover.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SRRemoveShortcutRollover.tif; path = Images/SRRemoveShortcutRollover.tif; sourceTree = "<group>"; };
+		BEA9B7A31315978F00FFC29B /* SRSnapback.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SRSnapback.tiff; path = Images/SRSnapback.tiff; sourceTree = "<group>"; };
+		BEA9B7F11315A53200FFC29B /* PyrcastPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyrcastPreferencesController.h; sourceTree = "<group>"; };
+		BEA9B7F21315A53200FFC29B /* PyrcastPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyrcastPreferencesController.m; sourceTree = "<group>"; };
+		BEA9B8661315BA2300FFC29B /* PCPreferencesShortcuts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPreferencesShortcuts.png; path = Images/PCPreferencesShortcuts.png; sourceTree = "<group>"; };
+		BEA9B8D21315D22000FFC29B /* PCAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCAlert.png; path = Images/PCAlert.png; sourceTree = "<group>"; };
+		BEAA6E8C131B38EF00D6F2D2 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Users/alexwinston/Applications/Growl.framework; sourceTree = "<absolute>"; };
+		BEAA6ED2131B39BD00D6F2D2 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		BEBBC22912E9D9EF007EB476 /* Blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blowfish.h; sourceTree = "<group>"; };
+		BEBBC22A12E9D9EF007EB476 /* Blowfish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blowfish.m; sourceTree = "<group>"; };
+		BEBBC22B12E9D9EF007EB476 /* NSData+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hex.h"; sourceTree = "<group>"; };
+		BEBBC22C12E9D9EF007EB476 /* NSData+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hex.m"; sourceTree = "<group>"; };
+		BEBBC22D12E9D9EF007EB476 /* Pandora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pandora.h; sourceTree = "<group>"; };
+		BEBBC22E12E9D9EF007EB476 /* Pandora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pandora.m; sourceTree = "<group>"; };
+		BEBBC22F12E9D9EF007EB476 /* NSString+URLDencoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLDencoding.h"; sourceTree = "<group>"; };
+		BEBBC23012E9D9EF007EB476 /* NSString+URLDencoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLDencoding.m"; sourceTree = "<group>"; };
+		BEBBC2BC12E9E2C9007EB476 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEBBC32912E9EDCE007EB476 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		BEBBC32A12E9EDCE007EB476 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		BEBBC3EE12EA02FC007EB476 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BEBBC57712EA92C7007EB476 /* Pyrcast.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Pyrcast.icns; sourceTree = "<group>"; };
+		BED04E17132866900062DE7B /* PCHistoryAlbumGlare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCHistoryAlbumGlare.png; path = Images/PCHistoryAlbumGlare.png; sourceTree = "<group>"; };
+		BED286B912E8A47A00A0863D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		BED295FB1312FADC001ED74A /* HistoryTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTextFieldCell.h; sourceTree = "<group>"; };
+		BED295FC1312FADC001ED74A /* HistoryTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTextFieldCell.m; sourceTree = "<group>"; };
+		BEEC8982132F1201005403A1 /* PCPreferencesLastFM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PCPreferencesLastFM.png; path = Images/PCPreferencesLastFM.png; sourceTree = "<group>"; };
+		BEFAA96E132819170031F1C1 /* HMediaKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMediaKeys.h; sourceTree = "<group>"; };
+		BEFAA96F132819170031F1C1 /* HMediaKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMediaKeys.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				BED286BA12E8A47A00A0863D /* Carbon.framework in Frameworks */,
+				BEBBC2BD12E9E2C9007EB476 /* QuartzCore.framework in Frameworks */,
+				BEBBC3EF12EA02FC007EB476 /* AudioToolbox.framework in Frameworks */,
+				BE42D7611302E8D600CED80E /* libz.dylib in Frameworks */,
+				BE42D8281302E95700CED80E /* SystemConfiguration.framework in Frameworks */,
+				BE62384313044C430074ADC5 /* BWToolkitFramework.framework in Frameworks */,
+				BE6FB9F61304FFC4001CCEC1 /* QTKit.framework in Frameworks */,
+				BEAA6E8D131B38EF00D6F2D2 /* Growl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9B76A131594F500FFC29B /* ShortcutRecorder */,
+				BE42D7421302E88C00CED80E /* ASIHttpRequest */,
+				BEBBC23512E9D9FF007EB476 /* TouchJSON */,
+				BEBBC22812E9D9DE007EB476 /* Pandora */,
+				256AC3D80F4B6AC300CF3369 /* PyrcastAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* PyrcastAppDelegate.m */,
+				BE3523B811D40B9B0000874F /* PyrcastStatusBarController.h */,
+				BE3523B911D40B9B0000874F /* PyrcastStatusBarController.m */,
+				BE2D2045130E5F5100513CD0 /* PyrcastView.h */,
+				BE2D2046130E5F5100513CD0 /* PyrcastView.m */,
+				BE2D1DF7130E252D00513CD0 /* AWSlider.h */,
+				BE2D1DF8130E252D00513CD0 /* AWSlider.m */,
+				BE2D1DF9130E252D00513CD0 /* AWImageSlider.h */,
+				BE2D1DFA130E252D00513CD0 /* AWImageSlider.m */,
+				BE8FB6861312190F0058A368 /* PyrcastHistoryTableController.h */,
+				BE8FB6871312190F0058A368 /* PyrcastHistoryTableController.m */,
+				BED295FB1312FADC001ED74A /* HistoryTextFieldCell.h */,
+				BED295FC1312FADC001ED74A /* HistoryTextFieldCell.m */,
+				BE01BAA413142EA200EC45CD /* PyrcastStationsController.h */,
+				BE01BAA513142EA200EC45CD /* PyrcastStationsController.m */,
+				BEA9B7F11315A53200FFC29B /* PyrcastPreferencesController.h */,
+				BEA9B7F21315A53200FFC29B /* PyrcastPreferencesController.m */,
+				BEFAA96E132819170031F1C1 /* HMediaKeys.h */,
+				BEFAA96F132819170031F1C1 /* HMediaKeys.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BED286B912E8A47A00A0863D /* Carbon.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				BE62384213044C430074ADC5 /* BWToolkitFramework.framework */,
+				BEAA6E8C131B38EF00D6F2D2 /* Growl.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBC2BC12E9E2C9007EB476 /* QuartzCore.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				BEBBC3EE12EA02FC007EB476 /* AudioToolbox.framework */,
+				BE42D8271302E95700CED80E /* SystemConfiguration.framework */,
+				BE42D7601302E8D600CED80E /* libz.dylib */,
+				BE6FB9F51304FFC4001CCEC1 /* QTKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Pyrcast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Pyrcast */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Pyrcast;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* Pyrcast_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE6238941304503C0074ADC5 /* Images */,
+				BEAA6ED2131B39BD00D6F2D2 /* Growl Registration Ticket.growlRegDict */,
+				BEBBC57712EA92C7007EB476 /* Pyrcast.icns */,
+				8D1107310486CEB800E47090 /* Pyrcast-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE42D7421302E88C00CED80E /* ASIHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BE42D7431302E8A200CED80E /* ASIHTTPRequestConfig.h */,
+				BE42D7441302E8A200CED80E /* ASIProgressDelegate.h */,
+				BE42D7451302E8A200CED80E /* ASIHTTPRequestDelegate.h */,
+				BE42D7461302E8A200CED80E /* ASIInputStream.h */,
+				BE42D7471302E8A200CED80E /* ASIInputStream.m */,
+				BE42D7481302E8A200CED80E /* ASIFormDataRequest.h */,
+				BE42D7491302E8A200CED80E /* ASIFormDataRequest.m */,
+				BE42D74A1302E8A200CED80E /* ASIHTTPRequest.h */,
+				BE42D74B1302E8A200CED80E /* ASIHTTPRequest.m */,
+				BE42D74C1302E8A200CED80E /* ASINetworkQueue.h */,
+				BE42D74D1302E8A200CED80E /* ASINetworkQueue.m */,
+				BE42D74E1302E8A200CED80E /* ASICacheDelegate.h */,
+				BE42D74F1302E8A200CED80E /* ASIDownloadCache.h */,
+				BE42D7501302E8A200CED80E /* ASIDownloadCache.m */,
+				BE42D7511302E8A200CED80E /* ASIDataCompressor.h */,
+				BE42D7521302E8A200CED80E /* ASIDataCompressor.m */,
+				BE42D7531302E8A200CED80E /* ASIDataDecompressor.h */,
+				BE42D7541302E8A200CED80E /* ASIDataDecompressor.m */,
+			);
+			name = ASIHttpRequest;
+			sourceTree = "<group>";
+		};
+		BE6238941304503C0074ADC5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8982132F1201005403A1 /* PCPreferencesLastFM.png */,
+				BED04E17132866900062DE7B /* PCHistoryAlbumGlare.png */,
+				BE6D9627132732A40083A964 /* PCMenuBar.png */,
+				BE6D9628132732A40083A964 /* PCMenuBarAlt.png */,
+				BEA9B8D21315D22000FFC29B /* PCAlert.png */,
+				BEA9B8661315BA2300FFC29B /* PCPreferencesShortcuts.png */,
+				BEA9B7A01315978F00FFC29B /* SRRemoveShortcut.tif */,
+				BEA9B7A11315978F00FFC29B /* SRRemoveShortcutPressed.tif */,
+				BEA9B7A21315978F00FFC29B /* SRRemoveShortcutRollover.tif */,
+				BEA9B7A31315978F00FFC29B /* SRSnapback.tiff */,
+				BE4491D81315559000365AC4 /* PCHeaderStationDelete.png */,
+				BE4491D91315559000365AC4 /* PCHeaderStationDeleteAlt.png */,
+				BE2DA179130DE61900239D5B /* PCHeaderBackground.png */,
+				BE2DA17A130DE61900239D5B /* PCHeaderSettings.png */,
+				BE2DA17B130DE61900239D5B /* PCHeaderSettingsAlt.png */,
+				BE2DA17C130DE61900239D5B /* PCHeaderStations.png */,
+				BE2DA17D130DE61900239D5B /* PCHeaderStationsAdd.png */,
+				BE2DA17E130DE61900239D5B /* PCHeaderStationsAddAlt.png */,
+				BE2DA17F130DE61900239D5B /* PCHeaderStationsAlt.png */,
+				BE2DA180130DE61900239D5B /* PCHistoryDislike.png */,
+				BE2DA181130DE61900239D5B /* PCHistoryLike.png */,
+				BE2DA182130DE61900239D5B /* PCPlayerBackground.png */,
+				BE2DA183130DE61900239D5B /* PCPlayerDislike.png */,
+				BE2DA184130DE61900239D5B /* PCPlayerDislikeAlt.png */,
+				BE2DA185130DE61900239D5B /* PCPlayerInfo.png */,
+				BE2DA186130DE61900239D5B /* PCPlayerInfoAlt.png */,
+				BE2DA187130DE61900239D5B /* PCPlayerLike.png */,
+				BE2DA188130DE61900239D5B /* PCPlayerLikeAlt.png */,
+				BE2DA189130DE61900239D5B /* PCPlayerPause.png */,
+				BE2DA18A130DE61900239D5B /* PCPlayerPauseAlt.png */,
+				BE2DA18B130DE61900239D5B /* PCPlayerPlay.png */,
+				BE2DA18C130DE61900239D5B /* PCPlayerPlayAlt.png */,
+				BE2DA18D130DE61900239D5B /* PCPlayerRestart.png */,
+				BE2DA18E130DE61900239D5B /* PCPlayerRestartAlt.png */,
+				BE2DA18F130DE61900239D5B /* PCPlayerSkip.png */,
+				BE2DA190130DE61900239D5B /* PCPlayerSkipAlt.png */,
+				BE2DA191130DE61900239D5B /* PCPlayerSliderKnob.png */,
+				BE2DA192130DE61900239D5B /* PCPlayerSliderKnobAlt.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BEA9B76A131594F500FFC29B /* ShortcutRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9B7801315959900FFC29B /* PTHotKey.h */,
+				BEA9B7811315959900FFC29B /* PTHotKey.m */,
+				BEA9B7821315959900FFC29B /* PTHotKeyCenter.h */,
+				BEA9B7831315959900FFC29B /* PTHotKeyCenter.m */,
+				BEA9B7841315959900FFC29B /* PTKeyCodeTranslator.h */,
+				BEA9B7851315959900FFC29B /* PTKeyCodeTranslator.m */,
+				BEA9B7861315959900FFC29B /* PTKeyCombo.h */,
+				BEA9B7871315959900FFC29B /* PTKeyCombo.m */,
+				BEA9B76B1315950400FFC29B /* ShortcutRecorder.h */,
+				BEA9B76C1315950400FFC29B /* SR_LeopardView.h */,
+				BEA9B76D1315950400FFC29B /* SR_LeopardView.m */,
+				BEA9B76E1315950400FFC29B /* SRRecorderControl.h */,
+				BEA9B76F1315950400FFC29B /* SRRecorderControl.m */,
+				BEA9B7701315950400FFC29B /* SRRecorderCell.h */,
+				BEA9B7711315950400FFC29B /* SRRecorderCell.m */,
+				BEA9B7721315950400FFC29B /* SRKeyCodeTransformer.h */,
+				BEA9B7731315950400FFC29B /* SRKeyCodeTransformer.m */,
+				BEA9B7741315950400FFC29B /* SRValidator.h */,
+				BEA9B7751315950400FFC29B /* SRValidator.m */,
+				BEA9B7761315950400FFC29B /* SRCommon.h */,
+				BEA9B7771315950400FFC29B /* SRCommon.m */,
+			);
+			name = ShortcutRecorder;
+			sourceTree = "<group>";
+		};
+		BEBBC22812E9D9DE007EB476 /* Pandora */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBC22912E9D9EF007EB476 /* Blowfish.h */,
+				BEBBC22A12E9D9EF007EB476 /* Blowfish.m */,
+				BEBBC22B12E9D9EF007EB476 /* NSData+Hex.h */,
+				BEBBC22C12E9D9EF007EB476 /* NSData+Hex.m */,
+				BEBBC22D12E9D9EF007EB476 /* Pandora.h */,
+				BEBBC22E12E9D9EF007EB476 /* Pandora.m */,
+				BEBBC22F12E9D9EF007EB476 /* NSString+URLDencoding.h */,
+				BEBBC23012E9D9EF007EB476 /* NSString+URLDencoding.m */,
+				BEBBC32912E9EDCE007EB476 /* Song.h */,
+				BEBBC32A12E9EDCE007EB476 /* Song.m */,
+				BE01BA7613142A6400EC45CD /* Station.h */,
+				BE01BA7713142A6400EC45CD /* Station.m */,
+			);
+			name = Pandora;
+			sourceTree = "<group>";
+		};
+		BEBBC23512E9D9FF007EB476 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BE1BC3E713184CF700C9EF33 /* CDataScanner_Extensions.h */,
+				BE1BC3E813184CF700C9EF33 /* CDataScanner_Extensions.m */,
+				BE1BC3E913184CF700C9EF33 /* NSDictionary_JSONExtensions.h */,
+				BE1BC3EA13184CF700C9EF33 /* NSDictionary_JSONExtensions.m */,
+				BE1BC3E213184CC700C9EF33 /* CDataScanner.h */,
+				BE1BC3E313184CC700C9EF33 /* CDataScanner.m */,
+				BE1BC3C413184C8400C9EF33 /* CJSONDeserializer.h */,
+				BE1BC3C513184C8400C9EF33 /* CJSONDeserializer.m */,
+				BE1BC3C613184C8400C9EF33 /* CJSONScanner.h */,
+				BE1BC3C713184C8400C9EF33 /* CJSONScanner.m */,
+				BE1BC3C813184C8400C9EF33 /* CJSONSerializer.h */,
+				BE1BC3C913184C8400C9EF33 /* CJSONSerializer.m */,
+				BE1BC3CA13184C8400C9EF33 /* JSONRepresentation.h */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Pyrcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Pyrcast" */;
+			buildPhases = (
+				BE62388A13044EC50074ADC5 /* CopyFiles */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pyrcast;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Pyrcast;
+			productReference = 8D1107320486CEB800E47090 /* Pyrcast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pyrcast" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Pyrcast */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Pyrcast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAA6EF3131B3EC000D6F2D2 /* Growl Registration Ticket.growlRegDict in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				BEBBC57812EA92C7007EB476 /* Pyrcast.icns in Resources */,
+				BE2DA193130DE61900239D5B /* PCHeaderBackground.png in Resources */,
+				BE2DA194130DE61900239D5B /* PCHeaderSettings.png in Resources */,
+				BE2DA195130DE61900239D5B /* PCHeaderSettingsAlt.png in Resources */,
+				BE2DA196130DE61900239D5B /* PCHeaderStations.png in Resources */,
+				BE2DA197130DE61900239D5B /* PCHeaderStationsAdd.png in Resources */,
+				BE2DA198130DE61900239D5B /* PCHeaderStationsAddAlt.png in Resources */,
+				BE2DA199130DE61900239D5B /* PCHeaderStationsAlt.png in Resources */,
+				BE2DA19A130DE61900239D5B /* PCHistoryDislike.png in Resources */,
+				BE2DA19B130DE61900239D5B /* PCHistoryLike.png in Resources */,
+				BE2DA19C130DE61900239D5B /* PCPlayerBackground.png in Resources */,
+				BE2DA19D130DE61900239D5B /* PCPlayerDislike.png in Resources */,
+				BE2DA19E130DE61900239D5B /* PCPlayerDislikeAlt.png in Resources */,
+				BE2DA19F130DE61900239D5B /* PCPlayerInfo.png in Resources */,
+				BE2DA1A0130DE61900239D5B /* PCPlayerInfoAlt.png in Resources */,
+				BE2DA1A1130DE61900239D5B /* PCPlayerLike.png in Resources */,
+				BE2DA1A2130DE61900239D5B /* PCPlayerLikeAlt.png in Resources */,
+				BE2DA1A3130DE61900239D5B /* PCPlayerPause.png in Resources */,
+				BE2DA1A4130DE61900239D5B /* PCPlayerPauseAlt.png in Resources */,
+				BE2DA1A5130DE61900239D5B /* PCPlayerPlay.png in Resources */,
+				BE2DA1A6130DE61900239D5B /* PCPlayerPlayAlt.png in Resources */,
+				BE2DA1A7130DE61900239D5B /* PCPlayerRestart.png in Resources */,
+				BE2DA1A8130DE61900239D5B /* PCPlayerRestartAlt.png in Resources */,
+				BE2DA1A9130DE61900239D5B /* PCPlayerSkip.png in Resources */,
+				BE2DA1AA130DE61900239D5B /* PCPlayerSkipAlt.png in Resources */,
+				BE2DA1AB130DE61900239D5B /* PCPlayerSliderKnob.png in Resources */,
+				BE2DA1AC130DE61900239D5B /* PCPlayerSliderKnobAlt.png in Resources */,
+				BE4491DA1315559000365AC4 /* PCHeaderStationDelete.png in Resources */,
+				BE4491DB1315559000365AC4 /* PCHeaderStationDeleteAlt.png in Resources */,
+				BEA9B7A41315978F00FFC29B /* SRRemoveShortcut.tif in Resources */,
+				BEA9B7A51315978F00FFC29B /* SRRemoveShortcutPressed.tif in Resources */,
+				BEA9B7A61315978F00FFC29B /* SRRemoveShortcutRollover.tif in Resources */,
+				BEA9B7A71315978F00FFC29B /* SRSnapback.tiff in Resources */,
+				BEA9B8671315BA2300FFC29B /* PCPreferencesShortcuts.png in Resources */,
+				BEA9B8D31315D22000FFC29B /* PCAlert.png in Resources */,
+				BE6D9629132732A40083A964 /* PCMenuBar.png in Resources */,
+				BE6D962A132732A40083A964 /* PCMenuBarAlt.png in Resources */,
+				BED04E18132866900062DE7B /* PCHistoryAlbumGlare.png in Resources */,
+				BEEC8983132F1201005403A1 /* PCPreferencesLastFM.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* PyrcastAppDelegate.m in Sources */,
+				BE3523BA11D40B9B0000874F /* PyrcastStatusBarController.m in Sources */,
+				BEBBC23112E9D9EF007EB476 /* Blowfish.m in Sources */,
+				BEBBC23212E9D9EF007EB476 /* NSData+Hex.m in Sources */,
+				BEBBC23312E9D9EF007EB476 /* Pandora.m in Sources */,
+				BEBBC23412E9D9EF007EB476 /* NSString+URLDencoding.m in Sources */,
+				BEBBC32B12E9EDCE007EB476 /* Song.m in Sources */,
+				BE42D7551302E8A200CED80E /* ASIInputStream.m in Sources */,
+				BE42D7561302E8A200CED80E /* ASIFormDataRequest.m in Sources */,
+				BE42D7571302E8A200CED80E /* ASIHTTPRequest.m in Sources */,
+				BE42D7581302E8A200CED80E /* ASINetworkQueue.m in Sources */,
+				BE42D7591302E8A200CED80E /* ASIDownloadCache.m in Sources */,
+				BE42D75A1302E8A200CED80E /* ASIDataCompressor.m in Sources */,
+				BE42D75B1302E8A200CED80E /* ASIDataDecompressor.m in Sources */,
+				BE2D1DFB130E252D00513CD0 /* AWSlider.m in Sources */,
+				BE2D1DFC130E252D00513CD0 /* AWImageSlider.m in Sources */,
+				BE2D2047130E5F5100513CD0 /* PyrcastView.m in Sources */,
+				BE8FB6881312190F0058A368 /* PyrcastHistoryTableController.m in Sources */,
+				BED295FD1312FADC001ED74A /* HistoryTextFieldCell.m in Sources */,
+				BE01BA7813142A6400EC45CD /* Station.m in Sources */,
+				BE01BAA613142EA200EC45CD /* PyrcastStationsController.m in Sources */,
+				BEA9B7781315950400FFC29B /* SR_LeopardView.m in Sources */,
+				BEA9B7791315950400FFC29B /* SRRecorderControl.m in Sources */,
+				BEA9B77A1315950400FFC29B /* SRRecorderCell.m in Sources */,
+				BEA9B77B1315950400FFC29B /* SRKeyCodeTransformer.m in Sources */,
+				BEA9B77C1315950400FFC29B /* SRValidator.m in Sources */,
+				BEA9B77D1315950400FFC29B /* SRCommon.m in Sources */,
+				BEA9B7881315959900FFC29B /* PTHotKey.m in Sources */,
+				BEA9B7891315959900FFC29B /* PTHotKeyCenter.m in Sources */,
+				BEA9B78A1315959900FFC29B /* PTKeyCodeTranslator.m in Sources */,
+				BEA9B78B1315959900FFC29B /* PTKeyCombo.m in Sources */,
+				BEA9B7F31315A53200FFC29B /* PyrcastPreferencesController.m in Sources */,
+				BE1BC3CB13184C8400C9EF33 /* CJSONDeserializer.m in Sources */,
+				BE1BC3CC13184C8400C9EF33 /* CJSONScanner.m in Sources */,
+				BE1BC3CD13184C8400C9EF33 /* CJSONSerializer.m in Sources */,
+				BE1BC3E413184CC700C9EF33 /* CDataScanner.m in Sources */,
+				BE1BC3EB13184CF700C9EF33 /* CDataScanner_Extensions.m in Sources */,
+				BE1BC3EC13184CF700C9EF33 /* NSDictionary_JSONExtensions.m in Sources */,
+				BEFAA970132819170031F1C1 /* HMediaKeys.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Downloads/BWToolKit_125_without_pAPI\"",
+					"\"$(SRCROOT)/../../../Applications\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pyrcast_Prefix.pch;
+				INFOPLIST_FILE = "Pyrcast-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Pyrcast;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Downloads/BWToolKit_125_without_pAPI\"",
+					"\"$(SRCROOT)/../../../Applications\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pyrcast_Prefix.pch;
+				INFOPLIST_FILE = "Pyrcast-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Pyrcast;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Alex Winston";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Pyrcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pyrcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
